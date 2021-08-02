@@ -1346,54 +1346,6 @@ const productData = [
   },
 
   {
-    id: 32,
-    name: 'Shoulder Beef',
-    slug: 'shoulder-beef',
-    unit: '10 lb',
-    price: 12,
-    salePrice: 10.8,
-    discountInPercent: 10,
-    description:
-      'The beef clod or shoulder clod is one of the least expensive cuts of beef and is taken from the shoulder region of the animal. Beef clod is a large muscle system, with some fat that covers the muscles.',
-    type: 'grocery',
-    image:
-      'https://s3.amazonaws.com/redqteam.com/pickbazar/shoulder_beef.jpg',
-    gallery: [
-      {
-        url:
-          'https://s3.amazonaws.com/redqteam.com/pickbazar/shoulder_beef.jpg',
-      },
-
-      {
-        url:
-          'https://s3.amazonaws.com/redqteam.com/pickbazar/shoulder_beef.jpg',
-      },
-
-      {
-        url:
-          'https://s3.amazonaws.com/redqteam.com/pickbazar/shoulder_beef.jpg',
-      },
-
-      {
-        url:
-          'https://s3.amazonaws.com/redqteam.com/pickbazar/shoulder_beef.jpg',
-      },
-    ],
-    categories: [
-      {
-        id: 9,
-        name: 'Meat Fish',
-        slug: 'meat-and-fish',
-      },
-      {
-        id: 13,
-        name: 'Meat',
-        slug: 'meat',
-      },
-    ],
-  },
-
-  {
     id: 33,
     name: 'Boneless Lamb',
     slug: 'boneless-lamb',

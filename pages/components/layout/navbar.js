@@ -7,7 +7,7 @@ export default function navbar() {
   return (
     <>
       <navbar className="flex flex-wrap flex-row justify-between items-center md:space-x-4 bg-white relative md:shadow-sm md:mb-10">
-        <a href="#">
+        <a href="/">
           <span className="sr-only">microcom.dev</span>
           <img
             className="h-8"
@@ -39,7 +39,7 @@ export default function navbar() {
         >
           {
             categoryData.map((category, index)=>(category.type === 'grocery') ? 
-            <Link href={category.slug} key={index}>
+            <Link href={`/c/${category.slug}`} key={index}>
               <a>{category.name}</a>
             </Link> : '')
           }
