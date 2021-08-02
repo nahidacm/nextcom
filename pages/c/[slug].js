@@ -12,8 +12,7 @@ const Category = () => {
       {productData.map((product, index) =>
         product.categories.find((category) => category.slug === slug) ? (
           <ProductCard
-            img_src={product.image}
-            name={product.name}
+            product={product}
             key={index}
           />
         ) : (

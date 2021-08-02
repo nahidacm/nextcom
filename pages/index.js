@@ -8,7 +8,7 @@ export default function Home() {
         productData.map(
           (product, index)=>(
             product.categories.find(category=>category.slug === 'fruits') ? 
-            <ProductCard img_src={product.image} name={product.name} key={index}/> : ''
+            <ProductCard product={product} key={index}/> : ''
           )
         )
       }
