@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import imagePlaceholder from "../layout/ImagePlaceholder";
-import { useSelector, useDispatch } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import {addToCart} from '../../redux/actions';
 
 export default function ProductCard(props) {
