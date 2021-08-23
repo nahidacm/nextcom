@@ -1,8 +1,10 @@
-import ProductCard from './components/product/ProductCard';
-import productData from './data/productData';
+import ProductCard from '../components/product/ProductCard';
+import MiniCart from '../components/cart/MiniCart';
+import productData from '../data/productData';
 
 export default function Home() {
   return (
+    <>
     <div className="grid grid-cols-8 md:grid-cols-6 sm:grid-cols-2 gap-3">
       {
         productData.map(
@@ -13,5 +15,7 @@ export default function Home() {
         )
       }
     </div>
+    <MiniCart/>
+    </>
   )
 }
