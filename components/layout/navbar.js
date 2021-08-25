@@ -6,7 +6,7 @@ export default function navbar() {
   const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
   return (
     <>
-      <navbar className="flex flex-wrap flex-row justify-between items-center md:space-x-4 bg-white relative md:shadow-sm md:mb-10">
+      <div className="flex flex-wrap flex-row justify-between items-center md:space-x-4 bg-white relative md:shadow-sm md:mb-10">
         <a href="/">
           <span className="sr-only">microcom.dev</span>
           <img
@@ -44,7 +44,7 @@ export default function navbar() {
             </Link> : '')
           }
         </nav>
-      </navbar>
+      </div>
     </>
   );
 }
