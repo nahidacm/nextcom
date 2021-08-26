@@ -2,9 +2,10 @@ import {
   ADD_TO_CART,
   CHECKOUT_REQUEST,
   CHECKOUT_FAILURE
-} from '../constants/ActionTypes'
+} from '../constants/ActionTypes';
+import {loadState} from '../../utils/localStorage';
 
-const initialState = {
+const initialState =  loadState() ?.cart ?? {
   items: [],
   itemCount: 0
 }

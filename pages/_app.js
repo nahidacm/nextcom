@@ -6,6 +6,10 @@ import { Provider } from 'react-redux'
 import { createLogger } from 'redux-logger'
 import thunk from 'redux-thunk'
 import reducer from '../redux/reducers'
+import {loadState, saveState} from '../utils/localStorage';
+import {throttle} from 'lodash';
+
+const persistedState = loadState();
 
 const middleware = [ thunk ];
 if (process.env.NODE_ENV !== 'production') {
@@ -16,6 +20,10 @@ const store = createStore(
   reducer,
   applyMiddleware(...middleware)
 )
+
+store.subscribe(throttle(()=>{
+  saveState(store.getState())
+},1000));
 
 function MyApp({ Component, pageProps }) {
   return (
