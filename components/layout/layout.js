@@ -1,6 +1,7 @@
 import Navbar from './navbar'
 import Footer from './foorter'
 import Header from './header'
+import MiniCart from '../../components/cart/MiniCart';
 
 export default function Layout({ children }) {
   return (
@@ -8,6 +9,7 @@ export default function Layout({ children }) {
       <Header/>
       <Navbar />
       <main>{children}</main>
+      <MiniCart/>
       <Footer />
     </div>
   )

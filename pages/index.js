@@ -1,5 +1,4 @@
 import ProductCard from '../components/product/ProductCard';
-import MiniCart from '../components/cart/MiniCart';
 import productData from '../data/productData';
 
 export default function Home() {
@@ -15,7 +14,6 @@ export default function Home() {
         )
       }
     </div>
-    <MiniCart/>
     </>
   )
 }
