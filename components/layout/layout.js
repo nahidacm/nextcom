@@ -1,7 +1,13 @@
 import Navbar from './navbar'
 import Footer from './foorter'
 import Header from './header'
-import MiniCart from '../../components/cart/MiniCart';
+import dynamic from 'next/dynamic'
+
+
+const MiniCart = dynamic(
+  () => import('../../components/cart/MiniCart'),
+  { ssr: false }
+);
 
 export default function Layout({ children }) {
   return (
