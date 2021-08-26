@@ -1,7 +1,7 @@
 import React from "react";
 import { useRouter } from "next/router";
-import ProductCard from '../components/product/ProductCard';
-import productData from '../data/productData';
+import ProductCard from '../../components/product/ProductCard';
+import productData from '../../data/productData';
 
 const Category = () => {
   const router = useRouter();

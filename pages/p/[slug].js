@@ -1,8 +1,8 @@
 import React from "react";
 import { useRouter } from "next/router";
-import productData from "../data/productData";
+import productData from "../../data/productData";
 import Image from "next/image";
-import imagePlaceholder from '../components/layout/ImagePlaceholder';
+import imagePlaceholder from '../../components/layout/ImagePlaceholder';
 
 const Product = () => {
   const router = useRouter();
